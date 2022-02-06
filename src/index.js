@@ -1,5 +1,7 @@
 import './sass/main.sass'
 import $ from 'jQuery'
+import 'bootstrap'
+
 const obj1 = {
 	language: 'javascript',
 	framework: 'react'

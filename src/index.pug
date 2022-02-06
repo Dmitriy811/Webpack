@@ -1,15 +1,38 @@
-include pug/libs/_libs
-
 doctype html
 html(lang='en')
     include pug/_head
     body
         .container
-            h1 Hello world! 
+            h1 My name Dmitriy
             p
                 | Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sed a, consequatur officia itaque veritatis quaerat in at quos mollitia odit laboriosam repudiandae amet laudantium autem sunt accusamus reprehenderit ipsum.
                 | Consequuntur, necessitatibus soluta? Cumque, suscipit. Omnis hic accusantium pariatur recusandae placeat, autem enim perferendis facilis sit cumque nam harum dolore impedit distinctio nesciunt, quia vel aperiam suscipit tempore. Nemo, impedit?
-            +image('anime2.jpg')
-            +image('anim.png')
             .box 
             .box1
+            form
+                .mb-3
+                    label.form-label(for='exampleInputEmail1') Email address
+                    input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+                    #emailHelp.form-text We'll never share your email with anyone else.
+                .mb-3
+                    label.form-label(for='exampleInputPassword1') Password
+                    input#exampleInputPassword1.form-control(type='password')
+                .mb-3.form-check
+                    input#exampleCheck1.form-check-input(type='checkbox')
+                    label.form-check-label(for='exampleCheck1') Check me out
+                button.btn.btn-primary(type='submit') Submit
+
+            button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop')
+                | Launch static backdrop modal!
+            #staticBackdrop.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+                .modal-dialog
+                    .modal-content
+                        .modal-header
+                            h5#staticBackdropLabel.modal-title Working...
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        .modal-body
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt, quibusdam est temporibus enim porro alias consectetur iure nisi. Atque, est. Ut non facilis voluptatem neque accusantium possimus, at soluta!
+                        .modal-footer
+                            button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                            button.btn.btn-primary(type='button') Understood
+
