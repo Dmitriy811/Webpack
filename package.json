@@ -17,6 +17,9 @@
     "> 1%",
     "IE 10"
   ],
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
