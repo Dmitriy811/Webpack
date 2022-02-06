@@ -15,3 +15,4 @@ const obj2 = {
 $('.box1').html('Some Text')
 
 console.log(obj2)
+console.log('Hello')
